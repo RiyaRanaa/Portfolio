@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    /*background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),
+                url('image/homepage.jpg');
+                background-size: cover;
+                color: white;*/
+    background-color:  rgb(10, 10, 21);
+}
+
+nav{
+    width: 100%;
+    height: 30px;
+    background-color:  rgb(10, 10, 21);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 7px;
+}
+
+.logo{
+    font-size: small;
+    letter-spacing: none;
+    font-weight: bold;
+    color: rgba(254, 169, 0, 0.659);
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+}
+
+.menu a:nth-child(5){
+    background: rgb(254, 169, 0);
+    border-radius: 5px;
+    margin: 0 1rem;
+    justify-content: center;
+}
+
+.menu i{
+    font-size: 0.8rem;
+    margin: 1 0.5rem;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.menu a:hover{
+    background: rgb(254, 169, 0);
+    border-radius: 5px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    padding: 0 70px;
+}
+
+.left{
+    flex-basis: 60%;
+}
+.right{
+    flex-basis: 30%;
+}
+.right img{
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 1000%;
+}
+.left h2{
+    font-style: italic;
+    color: rgb(254, 169, 0);
+    margin-top: 50px;
+}
+.left h1{
+    color: white;
+}
+.left p{
+    color: white;
+    line-height: 1.3rem;
+}
+#Contact{
+    text-decoration: none;
+    background: none;
+    color: white;
+    padding: 0.7rem 0.9rem;
+    font-size: small;
+    margin: 0 1rem;
+    border-radius: 5px;
+    border: 1.2px dashed rgb(254, 169, 0);
+}
+#Resume{
+    text-decoration: none;
+    background: none;
+    color: white;
+    padding: 0.7rem 0.9rem;
+    font-size: small;
+    margin: 0 1rem;
+    border-radius: 5px;
+    border: 1.2px dashed rgb(254, 169, 0);
+}
+
+#bio{
+    cursor: pointer;
+    padding: 45px 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: rgba(255, 247, 163, 0.449);
+}
+
+.leftbio{
+    flex-basis: 40%;
+}
+.rightbio{
+    flex-basis: 60%;
+}
+.leftbio img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.rightbio{
+    text-align: right;
+    padding: 0 40px;
+    color: rgb(10, 10, 21);
+
+}
+.rightbio p{
+    margin: 15px 0;
+    line-height: 1.3rem;
+}
+.rightbio h2{
+    color: rgb(254, 169, 0);
+    font-style: italic;
+    font-weight: 900;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    color: rgb(10, 10, 21);
+}
+.leftbio img{
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 40%;
+}
+
+.follow{
+    text-align: center;
+}
+.follow i{
+    color: rgb(254, 169, 0);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+
+
+
+
+#skill{
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
+    background: rgb(10, 10, 21);
+    color: white;
+}
+
+.header-skill{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 2px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+.header-skill h2{
+    color: rgb(254, 169, 0);
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-top: 2px;
+}
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+}
+
+.skill-main .skill-bar .skill-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+} 
+
+
+.skill-bar .skill-info .percentage{
+    font-weight: 700;
+}
+
+.skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background-color: rgb(182, 165, 139);
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(254, 169, 0);
+    border-radius: 25px;
+}
+
+
+
+
+.skill-bar .bar .html{
+    width: 90%;
+    animation: html 12s;
+}
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.skill-bar .bar .css{
+    width: 80%;
+    animation: css 12s;
+}
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+.skill-bar .bar .js{
+    width: 65%;
+    animation: js 12s;
+}
+@keyframes js{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+.skill-bar .bar .rj{
+    width: 40%;
+    animation: rj 12s;
+}
+@keyframes rj{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+.skill-bar .bar .java{
+    width: 75%;
+    animation: java 12s;
+}
+@keyframes java{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+.skill-bar .bar .python{
+    width: 50%;
+    animation: python 12s;
+}
+@keyframes python{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+.skill-bar .bar .dsa{
+    width: 60%;
+    animation: dsa 12s;
+}
+@keyframes dsa{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+.skill-bar .bar .ml{
+    width: 30%;
+    animation: ml 12s;
+}
+@keyframes ml{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+
+#project{
+    padding: 50px 70px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    text-align: center;
+}
+
+
+
+.project-section{
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    background-color: rgb(247, 242, 242);
+}
+.project-section .heading{
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-top: 2px;
+    color:  rgb(254, 169, 0);
+}
+.project-section .para{
+    font-size: 14px;
+    margin-bottom: 52px;
+    text-align: center;
+    color: black;
+}
+
+.project-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+
+.project-card{
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.project-card img{
+    width: 100%;
+    height: 100%;
+    transition: all 6s ease;
+}
+
+.project-card h4{
+    position: absolute;
+    bottom: 55px;
+    left: 20px;
+    text-align: left;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 6s ease;
+}
+.project-card:hover h4{
+    color: red;
+}
+.project-card:hover img{
+    opacity: .7;
+    color: orange;
+    transition: scale(1.09);
+}
+.project-card p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+    font-size: 13px;
+}
+
+
+@media only screen and (min-width:860px) and (max-width:1060px) {
+    .gallery_section {
+        padding: 90px 5%;
+    }
+    .gallery_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width:860px) {
+    .gallery_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width:620px) {
+    .gallery_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+section {
+    position: relative;
+    z-index: 3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(10, 10, 21);
+  }
+  
+  .container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .section-header {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .section-header h2 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .section-header p {
+    color: #FFF;
+  }
+  
+  .row  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact-info {
+    width: 50%;
+  }
+  
+  .contact-info-item {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info-icon {
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .contact-info-icon i {
+    font-size: 30px;
+    line-height: 70px;
+  }
+  
+  .contact-info-content {
+    margin-left: 20px;
+  }
+  
+  .contact-info-content h4 {
+    color: rgb(254, 169, 0);
+    font-size: 1.4em;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info-content p {
+    color: #FFF;
+    font-size: 1em;
+  }
+  
+  .contact-form {
+    background-color: #fff;
+    padding: 40px;
+    width: 50%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+  }
+  
+  .contact-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .contact-form .input-box input,
+  .contact-form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  
+  .contact-form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  
+  .contact-form .input-box input:focus ~ span,
+  .contact-form .input-box textarea:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  
+  .contact-form .input-box input[type="submit"]
+  {
+    width: 100%;
+    background: rgb(254, 169, 0);
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgb(254, 169, 0);
+    transition: 0.5s;
+  }
+  
+  .contact-form .input-box input[type="submit"]:hover
+  {
+    background: #FFF;
+    color: rgb(254, 169, 0);
+  }
+  
+  @media (max-width: 991px) {
+    section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  
+    .contact-info {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+  
+    .contact-form {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    background-color: #333;
+}
+
